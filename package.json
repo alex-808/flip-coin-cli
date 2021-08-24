@@ -1,0 +1,41 @@
+{
+  "name": "flip-coin",
+  "description": "Flip a single, virtual U.S. quarter.",
+  "version": "0.0.0",
+  "author": "Alex Davis @rawbeef-808",
+  "bin": {
+    "flip-coin": "./bin/run"
+  },
+  "bugs": "https://github.com/rawbeef-808/flip-coin/issues",
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/rawbeef-808/flip-coin",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "flip-coin"
+  },
+  "repository": "rawbeef-808/flip-coin",
+  "scripts": {
+    "prepack": "oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.3",
+    "esm": "^3.2.25"
+  }
+}
